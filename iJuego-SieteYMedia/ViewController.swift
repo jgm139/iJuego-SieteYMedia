@@ -15,13 +15,21 @@ class ViewController: UIViewController {
     var vistasCartas = [UIImageView]()
     var cartasMostradas = 0
     var puntuacionJugador = 0.0
+    var dineroJugador = 0.0
     var puntuacionMaquina = 0.0
+    var dineroMaquina = 0.0
     var resultadoPartida = ""
+    var rawApuesta = 0.0
+    var apuesta = false
     @IBOutlet weak var button_pedir_carta: UIButton!
     @IBOutlet weak var button_plantarse: UIButton!
     @IBOutlet weak var button_nueva_partida: UIButton!
     @IBOutlet weak var partidasGanadas: UILabel!
     @IBOutlet weak var partidasPerdidas: UILabel!
+    @IBOutlet weak var valorApuesta: UITextField!
+    @IBOutlet weak var labelDineroJugador: UILabel!
+    @IBOutlet weak var labelDineroMaquina: UILabel!
+    @IBOutlet weak var labelApuesta: UILabel!
     
     //MARK: Functions
     override func viewDidLoad() {
@@ -45,19 +53,29 @@ class ViewController: UIViewController {
             let m = userInfo["maquina"] as! Double
             self.puntuacionJugador = j
             self.puntuacionMaquina = m
-            button_pedir_carta.isEnabled = false
-            button_plantarse.isEnabled = false
+            self.button_pedir_carta.isEnabled = false
+            self.button_plantarse.isEnabled = false
             showAlert()
             
             if ganaJugador {
                 if var num = Int(self.partidasGanadas.text!) {
                     num += 1
                     self.partidasGanadas.text = "\(num)"
+                    
+                    if apuesta {
+                        self.dineroJugador += rawApuesta
+                        self.labelDineroJugador.text = "\(self.dineroJugador)"
+                    }
                 }
             } else {
                 if var num = Int(self.partidasPerdidas.text!) {
                     num += 1
                     self.partidasPerdidas.text = "\(num)"
+                    
+                    if apuesta {
+                        self.dineroMaquina += rawApuesta
+                        self.labelDineroMaquina.text = "\(self.dineroMaquina)"
+                    }
                 }
             }
         }
@@ -85,7 +103,7 @@ class ViewController: UIViewController {
         let finalHeight = altoPantalla/6
         
         var finalX = CGFloat(Int(finalWidth) + Int(finalWidth) * (enPosicion - 1))
-        var finalY = finalHeight
+        var finalY = finalHeight + 50
         
         if finalX > altoPantalla {
             finalX = finalWidth
@@ -126,31 +144,45 @@ class ViewController: UIViewController {
     
     @IBAction func pedirCarta(_ sender: Any) {
         if cartasMostradas == 0 {
-            button_plantarse.isEnabled = true
-            button_nueva_partida.isEnabled = true
+            self.button_plantarse.isEnabled = true
+            self.button_nueva_partida.isEnabled = true
         }
         
         let extract = juego.extraerCartaDeLaBaraja()
         
         if extract {
             dibujarCarta(carta: juego.manoHumano.getCarta(pos: cartasMostradas)!, enPosicion: cartasMostradas)
-            cartasMostradas += 1
+            self.cartasMostradas += 1
         }
     }
     
     @IBAction func plantarse(_ sender: Any) {
         let resultado = juego.plantarse()
         borrarCartas()
-        cartasMostradas = 0
+        self.cartasMostradas = 0
         print(resultado)
     }
     
     @IBAction func nuevaPartida(_ sender: Any) {
-        juego = Juego()
-        button_plantarse.isEnabled = false
-        button_pedir_carta.isEnabled = true
+        self.juego = Juego()
+        self.button_plantarse.isEnabled = false
+        self.button_pedir_carta.isEnabled = true
         borrarCartas()
-        cartasMostradas = 0
+        self.cartasMostradas = 0
+        self.apuesta = false
+        self.rawApuesta = 0.0
+        self.labelApuesta.text = ""
+    }
+    
+    @IBAction func apostar(_ sender: Any) {
+        self.apuesta = true
+        if let cantidad = self.valorApuesta.text {
+            if let e = Double(cantidad) {
+                self.rawApuesta = e
+                self.labelApuesta.text = "\(rawApuesta)"
+                self.valorApuesta.text = ""
+            }
+        }
     }
     
 }
