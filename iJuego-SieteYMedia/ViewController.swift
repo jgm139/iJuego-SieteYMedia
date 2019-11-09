@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var button_pedir_carta: UIButton!
     @IBOutlet weak var button_plantarse: UIButton!
     @IBOutlet weak var button_nueva_partida: UIButton!
+    @IBOutlet weak var partidasGanadas: UILabel!
+    @IBOutlet weak var partidasPerdidas: UILabel!
     
     //MARK: Functions
     override func viewDidLoad() {
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
             let resultado = userInfo["resultado"] as! String
             self.resultadoPartida = resultado
             
+            let ganaJugador = userInfo["gana"] as! Bool
             let j = userInfo["jugador"] as! Double
             let m = userInfo["maquina"] as! Double
             self.puntuacionJugador = j
@@ -45,6 +48,18 @@ class ViewController: UIViewController {
             button_pedir_carta.isEnabled = false
             button_plantarse.isEnabled = false
             showAlert()
+            
+            if ganaJugador {
+                if var num = Int(self.partidasGanadas.text!) {
+                    num += 1
+                    self.partidasGanadas.text = "\(num)"
+                }
+            } else {
+                if var num = Int(self.partidasPerdidas.text!) {
+                    num += 1
+                    self.partidasPerdidas.text = "\(num)"
+                }
+            }
         }
     }
     

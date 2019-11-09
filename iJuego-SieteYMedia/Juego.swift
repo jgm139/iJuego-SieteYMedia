@@ -54,6 +54,7 @@ class Juego {
     
     func plantarse() -> String {
         var resultado = ""
+        var ganaJugador = false
         let parteEntera = Int.random(in: 1...7)
         let parteDecimal = Int.random(in: 0...1)
         var valorCasa = 0.0
@@ -70,15 +71,16 @@ class Juego {
             resultado = "Gana la máquina con un " + String(valorCasa) + " y el jugador pierde con " + String(valorJugador)
         } else { // valorJugador > valorCasa
             resultado = "Gana el jugador con un " + String(valorJugador) + " y la máquina pierde con " + String(valorCasa)
+            ganaJugador = true
         }
         
-        informarDelResultado(resultado: resultado, puntuacion: (jugador: valorJugador, maquina: valorCasa))
+        informarDelResultado(resultado: resultado, gana: ganaJugador, puntuacion: (jugador: valorJugador, maquina: valorCasa))
         
         return resultado
     }
     
-    func informarDelResultado(resultado: String, puntuacion: (jugador: Double, maquina: Double)) {
+    func informarDelResultado(resultado: String, gana: Bool, puntuacion: (jugador: Double, maquina: Double)) {
         let nc = NotificationCenter.default
-        nc.post(name: NSNotification.Name("resultado"), object: nil, userInfo: ["resultado":resultado, "jugador":puntuacion.jugador, "maquina":puntuacion.maquina])
+        nc.post(name: NSNotification.Name("resultado"), object: nil, userInfo: ["resultado":resultado, "gana": gana, "jugador":puntuacion.jugador, "maquina":puntuacion.maquina])
     }
 }

@@ -15,38 +15,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-KG-m0R">
-                                <rect key="frame" x="157" y="358" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Pedir carta"/>
-                                <connections>
-                                    <action selector="pedirCarta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X1-Uh-6f8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIG-UJ-Vpf">
-                                <rect key="frame" x="157" y="433" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Plantarse"/>
-                                <connections>
-                                    <action selector="plantarse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0g-vu-fAy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc4-JO-gPD">
-                                <rect key="frame" x="157" y="509" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Nueva partida"/>
-                                <connections>
-                                    <action selector="nuevaPartida:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxr-4M-NwO"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="2qe-l4-mGQ">
+                                <rect key="frame" x="159" y="358" width="96" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qH-KG-m0R">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                                        <state key="normal" title="Pedir carta"/>
+                                        <connections>
+                                            <action selector="pedirCarta:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X1-Uh-6f8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIG-UJ-Vpf">
+                                        <rect key="frame" x="0.0" y="75" width="96" height="30"/>
+                                        <state key="normal" title="Plantarse"/>
+                                        <connections>
+                                            <action selector="plantarse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m0g-vu-fAy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc4-JO-gPD">
+                                        <rect key="frame" x="0.0" y="150" width="96" height="30"/>
+                                        <state key="normal" title="Nueva partida"/>
+                                        <connections>
+                                            <action selector="nuevaPartida:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wxr-4M-NwO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g2n-PQ-Hjn">
+                                <rect key="frame" x="20" y="64" width="64.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ganadas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMz-s1-gVk">
+                                        <rect key="frame" x="0.0" y="0.0" width="64.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWT-CJ-l39">
+                                        <rect key="frame" x="18.5" y="26" width="28" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IkW-gR-ZkV">
+                                <rect key="frame" x="330" y="64" width="64" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perdidas:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THX-ah-V5M">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZW-Mj-wXQ">
+                                        <rect key="frame" x="18" y="26" width="28" height="54"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="IkW-gR-ZkV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="WPf-ui-RNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IkW-gR-ZkV" secondAttribute="trailing" constant="20" id="YOp-Vx-ASn"/>
+                            <constraint firstItem="2qe-l4-mGQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bF6-P4-8Sa"/>
+                            <constraint firstItem="2qe-l4-mGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eY4-tA-Qqt"/>
+                            <constraint firstItem="g2n-PQ-Hjn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sV1-lI-zo9"/>
+                            <constraint firstItem="g2n-PQ-Hjn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="scQ-88-051"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="button_nueva_partida" destination="tc4-JO-gPD" id="ikA-s5-IbO"/>
                         <outlet property="button_pedir_carta" destination="9qH-KG-m0R" id="696-lc-yFD"/>
                         <outlet property="button_plantarse" destination="gIG-UJ-Vpf" id="ede-F6-k97"/>
+                        <outlet property="partidasGanadas" destination="mWT-CJ-l39" id="fcq-NW-Rdz"/>
+                        <outlet property="partidasPerdidas" destination="YZW-Mj-wXQ" id="TW2-CM-F7q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
