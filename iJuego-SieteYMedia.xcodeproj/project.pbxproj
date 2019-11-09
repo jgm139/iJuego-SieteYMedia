@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7BE6EDD23773101007E2E53 /* Palo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE6EDA23773100007E2E53 /* Palo.swift */; };
+		C7BE6EDE23773101007E2E53 /* Mano.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE6EDB23773100007E2E53 /* Mano.swift */; };
+		C7BE6EDF23773101007E2E53 /* Carta.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7BE6EDC23773101007E2E53 /* Carta.swift */; };
+		C7CF1BC52368989A00FDE02C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BC42368989A00FDE02C /* AppDelegate.swift */; };
+		C7CF1BC72368989A00FDE02C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BC62368989A00FDE02C /* SceneDelegate.swift */; };
+		C7CF1BC92368989A00FDE02C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BC82368989A00FDE02C /* ViewController.swift */; };
+		C7CF1BCC2368989A00FDE02C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF1BCA2368989A00FDE02C /* Main.storyboard */; };
+		C7CF1BCE2368989B00FDE02C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CF1BCD2368989B00FDE02C /* Assets.xcassets */; };
+		C7CF1BD12368989B00FDE02C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CF1BCF2368989B00FDE02C /* LaunchScreen.storyboard */; };
+		C7CF1BDC2368989B00FDE02C /* iJuego_SieteYMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BDB2368989B00FDE02C /* iJuego_SieteYMediaTests.swift */; };
+		C7CF1BED2368998600FDE02C /* Baraja.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BEC2368998600FDE02C /* Baraja.swift */; };
+		C7CF1BEF236899B300FDE02C /* Juego.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF1BEE236899B300FDE02C /* Juego.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7CF1BD82368989B00FDE02C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7CF1BB92368989A00FDE02C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7CF1BC02368989A00FDE02C;
+			remoteInfo = "iJuego-SieteYMedia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7BE6EDA23773100007E2E53 /* Palo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palo.swift; sourceTree = "<group>"; };
+		C7BE6EDB23773100007E2E53 /* Mano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mano.swift; sourceTree = "<group>"; };
+		C7BE6EDC23773101007E2E53 /* Carta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carta.swift; sourceTree = "<group>"; };
+		C7CF1BC12368989A00FDE02C /* iJuego-SieteYMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iJuego-SieteYMedia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CF1BC42368989A00FDE02C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C7CF1BC62368989A00FDE02C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C7CF1BC82368989A00FDE02C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7CF1BCB2368989A00FDE02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7CF1BCD2368989B00FDE02C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7CF1BD02368989B00FDE02C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7CF1BD22368989B00FDE02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CF1BD72368989B00FDE02C /* iJuego-SieteYMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iJuego-SieteYMediaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7CF1BDB2368989B00FDE02C /* iJuego_SieteYMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iJuego_SieteYMediaTests.swift; sourceTree = "<group>"; };
+		C7CF1BDD2368989B00FDE02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7CF1BEC2368998600FDE02C /* Baraja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baraja.swift; sourceTree = "<group>"; };
+		C7CF1BEE236899B300FDE02C /* Juego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juego.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7CF1BBE2368989A00FDE02C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CF1BD42368989B00FDE02C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7CF1BB82368989A00FDE02C = {
+			isa = PBXGroup;
+			children = (
+				C7CF1BC32368989A00FDE02C /* iJuego-SieteYMedia */,
+				C7CF1BDA2368989B00FDE02C /* iJuego-SieteYMediaTests */,
+				C7CF1BC22368989A00FDE02C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7CF1BC22368989A00FDE02C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7CF1BC12368989A00FDE02C /* iJuego-SieteYMedia.app */,
+				C7CF1BD72368989B00FDE02C /* iJuego-SieteYMediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7CF1BC32368989A00FDE02C /* iJuego-SieteYMedia */ = {
+			isa = PBXGroup;
+			children = (
+				C7BE6EDC23773101007E2E53 /* Carta.swift */,
+				C7BE6EDB23773100007E2E53 /* Mano.swift */,
+				C7BE6EDA23773100007E2E53 /* Palo.swift */,
+				C7CF1BC42368989A00FDE02C /* AppDelegate.swift */,
+				C7CF1BC62368989A00FDE02C /* SceneDelegate.swift */,
+				C7CF1BC82368989A00FDE02C /* ViewController.swift */,
+				C7CF1BCA2368989A00FDE02C /* Main.storyboard */,
+				C7CF1BCD2368989B00FDE02C /* Assets.xcassets */,
+				C7CF1BCF2368989B00FDE02C /* LaunchScreen.storyboard */,
+				C7CF1BD22368989B00FDE02C /* Info.plist */,
+				C7CF1BEC2368998600FDE02C /* Baraja.swift */,
+				C7CF1BEE236899B300FDE02C /* Juego.swift */,
+			);
+			path = "iJuego-SieteYMedia";
+			sourceTree = "<group>";
+		};
+		C7CF1BDA2368989B00FDE02C /* iJuego-SieteYMediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7CF1BDB2368989B00FDE02C /* iJuego_SieteYMediaTests.swift */,
+				C7CF1BDD2368989B00FDE02C /* Info.plist */,
+			);
+			path = "iJuego-SieteYMediaTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7CF1BC02368989A00FDE02C /* iJuego-SieteYMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CF1BE02368989B00FDE02C /* Build configuration list for PBXNativeTarget "iJuego-SieteYMedia" */;
+			buildPhases = (
+				C7CF1BBD2368989A00FDE02C /* Sources */,
+				C7CF1BBE2368989A00FDE02C /* Frameworks */,
+				C7CF1BBF2368989A00FDE02C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iJuego-SieteYMedia";
+			productName = "iJuego-SieteYMedia";
+			productReference = C7CF1BC12368989A00FDE02C /* iJuego-SieteYMedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7CF1BD62368989B00FDE02C /* iJuego-SieteYMediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7CF1BE32368989B00FDE02C /* Build configuration list for PBXNativeTarget "iJuego-SieteYMediaTests" */;
+			buildPhases = (
+				C7CF1BD32368989B00FDE02C /* Sources */,
+				C7CF1BD42368989B00FDE02C /* Frameworks */,
+				C7CF1BD52368989B00FDE02C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7CF1BD92368989B00FDE02C /* PBXTargetDependency */,
+			);
+			name = "iJuego-SieteYMediaTests";
+			productName = "iJuego-SieteYMediaTests";
+			productReference = C7CF1BD72368989B00FDE02C /* iJuego-SieteYMediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7CF1BB92368989A00FDE02C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Máster Móviles";
+				TargetAttributes = {
+					C7CF1BC02368989A00FDE02C = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					C7CF1BD62368989B00FDE02C = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = C7CF1BC02368989A00FDE02C;
+					};
+				};
+			};
+			buildConfigurationList = C7CF1BBC2368989A00FDE02C /* Build configuration list for PBXProject "iJuego-SieteYMedia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7CF1BB82368989A00FDE02C;
+			productRefGroup = C7CF1BC22368989A00FDE02C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7CF1BC02368989A00FDE02C /* iJuego-SieteYMedia */,
+				C7CF1BD62368989B00FDE02C /* iJuego-SieteYMediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7CF1BBF2368989A00FDE02C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CF1BD12368989B00FDE02C /* LaunchScreen.storyboard in Resources */,
+				C7CF1BCE2368989B00FDE02C /* Assets.xcassets in Resources */,
+				C7CF1BCC2368989A00FDE02C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CF1BD52368989B00FDE02C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7CF1BBD2368989A00FDE02C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CF1BEF236899B300FDE02C /* Juego.swift in Sources */,
+				C7CF1BC92368989A00FDE02C /* ViewController.swift in Sources */,
+				C7CF1BED2368998600FDE02C /* Baraja.swift in Sources */,
+				C7BE6EDE23773101007E2E53 /* Mano.swift in Sources */,
+				C7CF1BC52368989A00FDE02C /* AppDelegate.swift in Sources */,
+				C7BE6EDD23773101007E2E53 /* Palo.swift in Sources */,
+				C7BE6EDF23773101007E2E53 /* Carta.swift in Sources */,
+				C7CF1BC72368989A00FDE02C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7CF1BD32368989B00FDE02C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CF1BDC2368989B00FDE02C /* iJuego_SieteYMediaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7CF1BD92368989B00FDE02C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7CF1BC02368989A00FDE02C /* iJuego-SieteYMedia */;
+			targetProxy = C7CF1BD82368989B00FDE02C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7CF1BCA2368989A00FDE02C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7CF1BCB2368989A00FDE02C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7CF1BCF2368989B00FDE02C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7CF1BD02368989B00FDE02C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7CF1BDE2368989B00FDE02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C7CF1BDF2368989B00FDE02C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7CF1BE12368989B00FDE02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iJuego-SieteYMedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ua.jgm139.iJuego-SieteYMedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7CF1BE22368989B00FDE02C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iJuego-SieteYMedia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ua.jgm139.iJuego-SieteYMedia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7CF1BE42368989B00FDE02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iJuego-SieteYMediaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ua.jgm139.iJuego-SieteYMediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iJuego-SieteYMedia.app/iJuego-SieteYMedia";
+			};
+			name = Debug;
+		};
+		C7CF1BE52368989B00FDE02C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iJuego-SieteYMediaTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ua.jgm139.iJuego-SieteYMediaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iJuego-SieteYMedia.app/iJuego-SieteYMedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7CF1BBC2368989A00FDE02C /* Build configuration list for PBXProject "iJuego-SieteYMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CF1BDE2368989B00FDE02C /* Debug */,
+				C7CF1BDF2368989B00FDE02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CF1BE02368989B00FDE02C /* Build configuration list for PBXNativeTarget "iJuego-SieteYMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CF1BE12368989B00FDE02C /* Debug */,
+				C7CF1BE22368989B00FDE02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7CF1BE32368989B00FDE02C /* Build configuration list for PBXNativeTarget "iJuego-SieteYMediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7CF1BE42368989B00FDE02C /* Debug */,
+				C7CF1BE52368989B00FDE02C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7CF1BB92368989A00FDE02C /* Project object */;
+}
